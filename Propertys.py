@@ -61,3 +61,5 @@ print(alumno_1.puntaje)
 #Eliminamos el puntaje (Deleter)
 del alumno_1.puntaje
 print(alumno_1.puntaje)
+
+# holi
