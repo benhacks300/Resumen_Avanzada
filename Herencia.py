@@ -22,7 +22,7 @@ class Estudiante(Humano):
 
     def agregar_decima_a_nota(self, decimas):
         self.nota += decimas / 10
-        print(f"Nota queda en {self.nota}")
+        print(f"Nota queda en {self.nota}") 
 
 estudiante_1  = Estudiante("Pepe", 23, 80, 5.5, 2020)
 estudiante_1.ir_al_baño()
