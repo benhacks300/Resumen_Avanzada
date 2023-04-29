@@ -8,8 +8,8 @@ class ContadorDeOvejas(threading.Thread):
         self.cantidad_ovejas = cantidad_de_ovejas
 
     # Este será nuestro start() de nuestro thread pero como estámos trabajando con OOP, se sobreescribe como run()
-    def run(self):                                                                                 # Forma para editar un string dependiendo de su cantidad :p
-        print(f"Me presento, soy el thread {self.name} y contaré la cantidad de {self.cantidad_ovejas} oveja{'s' if self.cantidad_ovejas > 1 else ''}")
+    def run(self):                                                                                 
+        print(f"Me presento, soy el thread {self.name} y contaré la cantidad de {self.cantidad_ovejas} oveja{'s' if self.cantidad_ovejas > 1 else ''}")# Forma para editar un string dependiendo de su cantidad :p
         for oveja in range(1, self.cantidad_ovejas + 1):
             print(f"{self.name}: {oveja} oveja{'s' if oveja > 1 else ''}")
             time.sleep(1)
