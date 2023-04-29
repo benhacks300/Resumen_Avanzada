@@ -1,7 +1,7 @@
 from abc import ABC, abstractclassmethod
 from secrets import choice
 
-class Personaje(ABC): # Ésta es la plantilla por la cual nuestras próximas clases deberán basarse
+class Personaje(ABC): # Esta es la plantilla por la cual nuestras próximas clases deberán basarse
     def __init__(self, nombre, color, tareas):
         self.color = color 
         self.tareas = tareas
@@ -39,3 +39,4 @@ class Impostor(Personaje):
             super().habilidad_especial
             print(f"{self.nombre} ingresa en las alcantarilas y se dirije a {destino}")
         
+impostor = Impostor()
